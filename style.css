@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap');
+
+:root {
+  --crema: #F3EAE3;
+  --white: #FFFFFF;
+  --gray: #676773;
+  --green: #3D8168;
+  --black: #000000;
+}
+
+/* ||General style */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--gray);
+  background: var(--crema);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  block-size: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ||perfum */
+
+.perfum {
+  block-size: 70%;
+  inline-size: 40%;
+  background: var(--white);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.perfum>* {
+  flex-grow: 1;
+}
+
+.perfum img {
+  inline-size: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.info {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1.5rem 2rem;
+  inline-size: 50%;
+  border-radius: 0 1rem 1rem 0;
+  -webkit-border-radius: 0 1rem 1rem 0;
+  -moz-border-radius: 0 1rem 1rem 0;
+  -ms-border-radius: 0 1rem 1rem 0;
+  -o-border-radius: 0 1rem 1rem 0;
+}
+
+.info>p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.info h1 {
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.description {
+  word-spacing: 0.5rem;
+  line-height: 1.5;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+}
+
+.precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  block-size: 6rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.precio span {
+  color: var(--green);
+  font-weight: bold;
+  font-family: 'Roboto Serif', serif;
+  font-size: 3rem;
+}
+
+.precio p:last-child {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+}
+
+button {
+  inline-size: 100%;
+  font-weight: 600;
+  border-radius: 1rem;
+  border: 0;
+  padding-block: 1rem;
+  color: var(--white);
+  /* background: var(--green); */
+  background: var(--green) url(https://img.icons8.com/metro/256/shopping-cart.png) 25% 50%/1.6rem 1.6rem no-repeat;
+}
+
+
+/* opciones de integrar un icono */
+/* button {
+  background-color: var(--green);
+  background-image: url(https://img.icons8.com/metro/256/shopping-cart.png);
+  background-position: 25% 50%;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+} */
+
+/* button::before {
+  content: '🛒';
+} */
+
+/* button::before {
+  background-image: url(//img.icons8.com/metro/256/external-link.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  inline-size: 1rem;
+  block-size: 1rem;
+  content: "";
+  margin-inline-end: 0.5rem;
+} */
